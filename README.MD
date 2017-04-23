@@ -3,18 +3,32 @@
 
 ## Installation
 
-To install this library, run:
-
-```bash
-$ npm install ng2-popup-notify --save
-```
-
-## Installation
-
 ```bash
 $ npm install --save ng2-popup-notify
 ```
-
+## Usage
+Configure your System.config
+```javascript
+System.config({
+  defaultJSExtensions: true,
+  map: {
+    "angular2": "node_modules/angular2",
+    "rxjs": "node_modules/rxjs",
+    ...
+    'ng2-notify-popup' : 'npm:ng2-notify-popup',
+  },
+  packages: {        
+    'app': {
+      main : './main.ts',
+      defaultJSExtensions : 'ts'
+    },
+    "ng2-notify-popup" : {
+      main:'./index.js',
+      defaultExtension : 'js'
+    }
+  }
+});
+```
 and then from your Angular `AppModule`:
 
 ```typescript
