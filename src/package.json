@@ -1,0 +1,31 @@
+{
+  "name": "ng2-notify-popup",
+  "version": "0.1.4",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shubhi1407/ng2-notify-popup.git"
+  },
+  "author": {
+    "name": "Shubhangi Gupta",
+    "email": "shubhangi140793@gmail.com"
+  },
+  "keywords": [
+    "angular2", "angular4", "notify", "ng-notify", "angular-notification"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shubhi1407/ng2-notify-popup.git/issues"
+  },
+  "main":"index.js",
+  "module": "ng2-notify-popup.js",
+  "typings": "ng2-notify-popup.d.ts",
+  "peerDependencies": {
+    "@angular/core": "^4.0.0",
+    "rxjs": "^5.1.0",
+    "zone.js": "^0.8.4"
+  },
+  "dependencies": {
+    "@angular/animations": "^4.0.3",
+    "@angular/platform-browser": "^4.0.3"
+  }
+}
