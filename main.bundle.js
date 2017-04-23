@@ -1,9 +1,9 @@
 webpackJsonp([1,4],{
 
-/***/ 137:
+/***/ 140:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(45)();
+exports = module.exports = __webpack_require__(26)();
 // imports
 
 
@@ -18,22 +18,22 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 139:
+/***/ 142:
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"header\">\r\n  <h1>ng2-notify-popup</h1>\r\n  <h2>A simple, lightweight module for displaying notifications in your Angular 2/4 app.\r\n    </h2>\r\n  <h2> Inspired from <a href=\"https://github.com/matowens/ng-notify\" style=\"color:#fff\">ng-notify</a> for Angular 1.x</h2>\r\n</div>\r\n<h3>Demo</h3>\r\n<div id=\"modular\">\r\n  <ul>\r\n    <li>\r\n      <a class=\"btn success pure\" ng-class=\"theme\" (click)=\"show('Success','success')\">success</a></li>\r\n    <li><a class=\"btn info pure \" ng-class=\"theme \" (click)=\"show('Info','info')\">info</a></li>\r\n    <li><a class=\"btn warn pure \" ng-class=\"theme \" (click)=\"show('Warn','warn')\">warn</a></li>\r\n    <br>\r\n    <li><a class=\"btn error pure \" ng-class=\"theme \" (click)=\"show('Error','error')\">error</a></li>\r\n    <li><a class=\"btn grimace pure \" ng-class=\"theme \" (click)=\"show('Grimace','grimace')\">grimace</a></li>\r\n    <li><a class=\"btn default \" (click)=\"show('Default','info')\">default</a></li>\r\n\r\n\r\n    <li><a class=\"btn default \" (click)=\"showModular('Modular','info')\">Modular</a></li>\r\n  </ul>\r\n  <h3>options</h3>\r\n  <ul class=\"options\">\r\n    <li>\r\n      <label for=\"position\">position</label>\r\n      <select [(ngModel)]=\"position\" class=\"options-label\" id=\"position\">\r\n      <option label=\"top\" [value]=\"'top'\">top</option>\r\n      <option label=\"bottom\" [value]=\"'bottom'\">bottom</option>\r\n    </select>\r\n    </li>\r\n\r\n    <li>\r\n      <label for=\"duration\" class=\"options-label\">duration (ms)</label>\r\n      <select [(ngModel)]=\"duration\" id=\"duration\" class=\"options-label\">\r\n                          <option *ngFor=\"let time of durations\" [value]=\"time\">{{time}}</option>\r\n\r\n                      </select>\r\n    </li>\r\n  </ul>\r\n"
 
 /***/ }),
 
-/***/ 164:
+/***/ 166:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(72);
+module.exports = __webpack_require__(73);
 
 
 /***/ }),
 
-/***/ 71:
+/***/ 72:
 /***/ (function(module, exports) {
 
 function webpackEmptyContext(req) {
@@ -42,20 +42,20 @@ function webpackEmptyContext(req) {
 webpackEmptyContext.keys = function() { return []; };
 webpackEmptyContext.resolve = webpackEmptyContext;
 module.exports = webpackEmptyContext;
-webpackEmptyContext.id = 71;
+webpackEmptyContext.id = 72;
 
 
 /***/ }),
 
-/***/ 72:
+/***/ 73:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__ = __webpack_require__(79);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_app_module__ = __webpack_require__(82);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__(83);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__ = __webpack_require__(81);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_app_module__ = __webpack_require__(84);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__(85);
 
 
 
@@ -68,7 +68,7 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dyna
 
 /***/ }),
 
-/***/ 81:
+/***/ 83:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -104,8 +104,8 @@ var AppComponent = (function () {
 AppComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Component */])({
         selector: 'app-root',
-        template: __webpack_require__(139),
-        styles: [__webpack_require__(137)],
+        template: __webpack_require__(142),
+        styles: [__webpack_require__(140)],
         providers: [__WEBPACK_IMPORTED_MODULE_1_ng2_notify_popup__["b" /* NotificationService */]]
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ng2_notify_popup__["b" /* NotificationService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ng2_notify_popup__["b" /* NotificationService */]) === "function" && _a || Object])
@@ -116,16 +116,16 @@ var _a;
 
 /***/ }),
 
-/***/ 82:
+/***/ 84:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(15);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(77);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(78);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(79);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(80);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_ng2_notify_popup__ = __webpack_require__(60);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component__ = __webpack_require__(81);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component__ = __webpack_require__(83);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -163,7 +163,7 @@ AppModule = __decorate([
 
 /***/ }),
 
-/***/ 83:
+/***/ 85:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -180,5 +180,5 @@ var environment = {
 
 /***/ })
 
-},[164]);
+},[166]);
 //# sourceMappingURL=main.bundle.js.map
