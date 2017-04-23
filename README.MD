@@ -5,7 +5,7 @@
 To install this library, run:
 
 ```bash
-$ npm install newyo --save
+$ npm install ng2-popup-notify --save
 ```
 
 ## Installation
@@ -43,7 +43,7 @@ export class AppModule { }
 Once your library is imported, you can use its Notification service
 
 ```typescript
-// You can now use this library service to show popup anywhere in angular app 
+// You can now use this library service to show popup anywhere in angular app
 import { Component } from '@angular/core';
 import { NotificationService } from 'ng2-notify-popup';
 
@@ -56,7 +56,7 @@ import { NotificationService } from 'ng2-notify-popup';
 export class AppComponent {
 
   constructor(private notify: NotificationService) { }
-  
+
   // to append in body
   show(text: string, type: string): void {
     this.notify.show(text, { position:'top', duration:'2000', type: 'success' });
