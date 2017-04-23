@@ -23,7 +23,7 @@ exports = module.exports = __webpack_require__(26)();
 
 
 // module
-exports.push([module.i, "/* You can add global styles to this file, and also import other style files */\n.options-label {\n  margin: 3px auto;\n}\n.options li {\n  margin:0 10px;\n}\n\nbody{\n  font-family: 'Varela Round', sans-serif;\n}\nh1 {\n  font-size: 45px;\n}\n", ""]);
+exports.push([module.i, "/* You can add global styles to this file, and also import other style files */\n.options-label {\n  margin: 3px auto;\n}\n.options li {\n  margin:0 10px;\n}\n\nbody{\n  font-family: 'Varela Round', sans-serif !important;\n}\nh1 {\n  font-size: 45px;\n}\n", ""]);
 
 // exports
 
