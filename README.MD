@@ -1,4 +1,5 @@
 # ng2-notify-popup
+## [ View Demo ](https://shubhi1407.github.io/ng2-notify-popup/)
 
 ## Installation
 
