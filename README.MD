@@ -1,5 +1,6 @@
 # ng2-notify-popup
 Based on [ ng-notify ](https://matowens.github.io/ng-notify/) for Angular 1.x by Mat Owens
+
 ## [ View Demo ](https://shubhi1407.github.io/ng2-notify-popup/)
 
 ## Installation
@@ -37,6 +38,11 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
+
+/** IMPORTANT : IE10 and IE11 requires the following to support `@angular/animation` (which is used by this module).
+Run `npm install --save web-animations-js`.
+*/
+import 'web-animations-js';  
 
 // Import library
 import { NgNotifyPopup } from 'newyo';
