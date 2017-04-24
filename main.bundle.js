@@ -173,7 +173,7 @@ module.exports = "<div class=\"header\">\r\n  <h1>ng2-notify-popup</h1>\r\n  <h2
 
 /***/ }),
 
-/***/ 318:
+/***/ 319:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(127);
@@ -181,5 +181,5 @@ module.exports = __webpack_require__(127);
 
 /***/ })
 
-},[318]);
+},[319]);
 //# sourceMappingURL=main.bundle.js.map
