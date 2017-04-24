@@ -11,10 +11,10 @@ export * from './services/notification.service';
 
 @NgModule({
     imports: [
-        CommonModule
+        CommonModule, BrowserAnimationsModule
     ],
     declarations: [
-        NotificationComponent,
+        NotificationComponent
     ],
     providers: [ComponentInjectService],
     entryComponents: [NotificationComponent]
