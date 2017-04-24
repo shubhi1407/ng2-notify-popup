@@ -1,4 +1,5 @@
 # ng2-notify-popup
+Based on [ ng-notify ](https://matowens.github.io/ng-notify/) for Angular 1.x by Mat Owens
 ## [ View Demo ](https://shubhi1407.github.io/ng2-notify-popup/)
 
 ## Installation
@@ -82,7 +83,40 @@ export class AppComponent {
   }
 
 ```
+## API
+### NotificationService.setConfig( options: object )
+This method can be used to override the default configuration provided by the module. All params are optinal
+```typescript
+NotificationService.setConfig({
+                                position: 'top/bottom',
+                                type: 'info/success/warn/error/grimace/default',
+                                duration: 4000,
+                                sticky: true/false,
+                             })
+```
+### NotificationService.show( text: string, options?: object )
+`show()` method can be called with an optional second argument to override the global default config
+```typescript
+// Simple notification
+NotificationService.show("Success");
+// Notification with options
+NotificationService.show("Error occured", { position: 'top', type: 'error' })
+//Show notification inside a division (MUST have position:relative)
+NotificationService.show("Inside a div", { location: '#my-div' })
+```
+### NotificationService.destroy()
+```typescript
+// Destroy any active notification
+NotificationService.destroy();
+```
 
+## Custom type
+You can create your own `type` in CSS as follows
+```CSS
+.ngn-wild {
+  background-color: #f4a460;
+  }
+```
 ## Development
 
 To generate all `*.js`, `*.d.ts` and `*.metadata.json` files:
