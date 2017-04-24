@@ -23,8 +23,8 @@
     "annotateForClosureCompiler": true,
     "strictMetadataEmit": true,
     "skipTemplateCodegen": true,
-    "flatModuleOutFile": "newyo.js",
-    "flatModuleId": "newyo"
+    "flatModuleOutFile": "ng2-notify-popup.js",
+    "flatModuleId": "ng2-notify-popup"
   },
   "files": [
     "./index.ts"
