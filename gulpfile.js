@@ -30,6 +30,10 @@ gulp.task('copy:source', function () {
     .pipe(gulp.dest(tmpFolder));
 });
 
+gulp.task('copy:readme',function() {
+  return gulp.src('README.MD').pipe(gulp.dest(distFolder))
+})
+
 /**
  * 3. Inline template (.html) and style (.css) files into the the component .ts files.
  *    We do this on the /.tmp folder to avoid editing the original /src files
@@ -119,6 +123,7 @@ gulp.task('compile', function () {
     'copy:manifest',
     'clean:build',
     'clean:tmp',
+    'copy:readme',
     function (err) {
       if (err) {
         console.log('ERROR:', err.message);

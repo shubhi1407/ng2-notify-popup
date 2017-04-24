@@ -8,7 +8,7 @@ export class NotificationService {
 
     constructor(private compInject: ComponentInjectService) {
     }
-    private defaultConfigVar: NotificationConfig = new NotificationConfig('bottom', 3000, 'error', 'body', '');
+    private defaultConfigVar: NotificationConfig = new NotificationConfig('bottom', 3000, 'error', 'body', false, '');
     private activeNotificationCompRef: ComponentRef<any>;
     private cleartime: number;
     private clearhide: number;
@@ -28,7 +28,7 @@ export class NotificationService {
 
     public show(notifictionText: string, notificationConfig?: Object): void {
         this.destroy();
-        let config: NotificationConfig = new NotificationConfig(this.defaultConfigVar.position, this.defaultConfigVar.duration, this.defaultConfigVar.type, this.defaultConfigVar.location, notifictionText);
+        let config: NotificationConfig = new NotificationConfig(this.defaultConfigVar.position, this.defaultConfigVar.duration, this.defaultConfigVar.type, this.defaultConfigVar.location, this.defaultConfigVar.sticky, notifictionText);
         if (notificationConfig != undefined && notificationConfig != null)
             this.setConfig(notificationConfig, config);
         if (config.location == 'body')
@@ -38,13 +38,21 @@ export class NotificationService {
 
         this.activeNotificationCompRef.instance.fade = 'show';
 
-        this.cleartime = window.setTimeout(() => {
-            this.activeNotificationCompRef.instance.fade = 'hide';
-            this.clearhide = window.setTimeout(() => {
-                this.destroy();
-            }, 700)
-        }, config.duration);
-
+        if (!this.activeNotificationCompRef.instance.sticky) {
+            this.cleartime = window.setTimeout(() => {
+                this.activeNotificationCompRef.instance.fade = 'hide';
+                this.clearhide = window.setTimeout(() => {
+                    this.destroy();
+                }, 700)
+            }, config.duration);
+        }
+        else
+            this.activeNotificationCompRef.instance.destroyComponent.subscribe((value) => {
+                this.activeNotificationCompRef.instance.fade = 'hide';
+                this.clearhide = window.setTimeout(() => {
+                    this.destroy();
+                }, 700)
+            });
     }
 
     private setConfig(configObject: Object, targetObject: NotificationConfig): void {
