@@ -45,7 +45,7 @@ Run `npm install --save web-animations-js`.
 import 'web-animations-js';  
 
 // Import library
-import { NgNotifyPopup } from 'newyo';
+import { NgNotifyPopup } from 'ng2-notify-popup';
 
 @NgModule({
   declarations: [
