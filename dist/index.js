@@ -45,6 +45,7 @@ NotificationComponent.propDecorators = {
     'notifyText': [{ type: Input },],
     'fade': [{ type: Input },],
     'sticky': [{ type: Input },],
+    'location': [{ type: Input },],
     'destroyComponent': [{ type: Output },],
 };
 

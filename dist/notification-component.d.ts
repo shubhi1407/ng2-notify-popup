@@ -6,6 +6,7 @@ export declare class NotificationComponent {
     notifyText: string;
     fade: string;
     sticky: boolean;
+    location: string;
     destroyComponent: EventEmitter<boolean>;
     dismiss(): void;
 }
