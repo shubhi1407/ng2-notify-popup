@@ -28,6 +28,7 @@ export class NotificationComponent {
     @Input() notifyText: string;
     @Input() fade: string;
     @Input() sticky: boolean;
+    @Input() location: string;
     @Output() destroyComponent = new EventEmitter<boolean>();
     public dismiss(): void {
         this.destroyComponent.emit(true);
