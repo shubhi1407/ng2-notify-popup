@@ -7,7 +7,7 @@ Based on [ ng-notify ](https://matowens.github.io/ng-notify/) for Angular 1.x by
 ## Installation
 
 ```bash
-$ npm install --save ng2-popup-notify
+$ npm install --save ng2-notify-popup
 ```
 ## Usage
 Configure your System.config
